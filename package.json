@@ -21,8 +21,11 @@
   },
   "eslintConfig": {
     "extends": "react-app",
-    "rules":{
-      "indent": ["error", 4]
+    "rules": {
+      "indent": [
+        "error",
+        4
+      ]
     }
   },
   "browserslist": {
@@ -45,6 +48,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "file-dialog": "0.0.8",
+    "fs": "0.0.1-security",
+    "react-router-dom": "^5.1.2"
   }
 }

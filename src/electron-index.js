@@ -3,8 +3,7 @@ const url = require('url')
 const path = require('path')
 
 function createMainWindow () {
-
-    let mainWin = new BrowserWindow({
+    const mainWin = new BrowserWindow({
         width: 500,
         height: 500,
         webPreferences: {
@@ -18,11 +17,10 @@ function createMainWindow () {
         slashes: true
     })
 
-    mainWin.loadURL(startURL);
+    mainWin.loadURL(startURL)
 
     // dev tools
     mainWin.webContents.openDevTools()
-
 }
 
 app.whenReady().then(createMainWindow)

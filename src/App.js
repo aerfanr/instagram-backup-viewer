@@ -1,8 +1,21 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
+import Landing from './pages/landing'
+import Direct from './pages/direct'
 
 function App (props) {
     return (
-        <h1>Hi.</h1>
+        <Router>
+            <Switch>
+                <Route path='/direct'>
+                    <Direct />
+                </Route>
+                <Route path='/'>
+                    <Landing />
+                </Route>
+            </Switch>
+        </Router>
     )
 }
 
