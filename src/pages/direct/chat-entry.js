@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+const { ipcRenderer } = window.require('electron')
+
 function ChatEntry (props) {
     const participants = props.data.participants
     let titleString = ''
@@ -17,10 +19,16 @@ function ChatEntry (props) {
     }
 
     return (
-        <div className='chat-entry'>
+        <div className='chat-entry' onClick={() => {
+            showChatWin(props.data)
+        }}>
             {titleString}
         </div>
     )
+}
+
+function showChatWin (data) {
+    ipcRenderer.sendSync('chat-display-request', data)
 }
 
 ChatEntry.propTypes = {

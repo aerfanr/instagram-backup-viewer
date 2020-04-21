@@ -25,8 +25,6 @@ function Direct () {
         }
     }, [filePath])
 
-    console.log(jsonData)
-
     return ([
         <h1 key='title'> Direct </h1>,
         <div key='back' className='back'>

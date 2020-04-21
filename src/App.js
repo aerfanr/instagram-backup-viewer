@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Landing from './pages/landing'
 import Direct from './pages/direct'
+import ChatDisplay from './pages/chat-display'
 
 function App (props) {
     return (
@@ -10,6 +11,9 @@ function App (props) {
             <Switch>
                 <Route path='/direct'>
                     <Direct />
+                </Route>
+                <Route path='/chat-display'>
+                    <ChatDisplay />
                 </Route>
                 <Route path='/'>
                     <Landing />
