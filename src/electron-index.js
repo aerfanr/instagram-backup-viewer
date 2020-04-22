@@ -20,7 +20,7 @@ function createMainWindow () {
     mainWin.loadURL(startURL)
 
     // dev tools
-    mainWin.webContents.openDevTools()
+    // mainWin.webContents.openDevTools()
 }
 
 function createRecieverWindow (pageURL, data) {
@@ -39,7 +39,7 @@ function createRecieverWindow (pageURL, data) {
     })
 
     // dev tools
-    recieverWin.webContents.openDevTools()
+    // recieverWin.webContents.openDevTools()
 }
 
 app.whenReady().then(createMainWindow)
