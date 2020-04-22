@@ -1,15 +1,28 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+
+import Message from './chat-display/messege'
 
 const { ipcRenderer } = window.require('electron')
 
 function ChatDisplay () {
+    const [data, setData] = useState({
+        conversation: []
+    })
+
     useEffect(() => {
-        console.log(ipcRenderer.sendSync('reciever-ready'))
+        const temp = ipcRenderer.sendSync('reciever-ready')
+        temp.conversation = temp.conversation.slice().reverse()
+        setData(temp)
     }, [])
 
-    return (
-        <h1>Chat Display</h1>
-    )
+    return ([
+        <h1 key='title'>direct chat</h1>,
+        data.conversation.map((value, index) => {
+            return (
+                <Message key={index} info={value}/>
+            )
+        })
+    ])
 }
 
 export default ChatDisplay

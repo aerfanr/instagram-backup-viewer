@@ -34,7 +34,7 @@ function createRecieverWindow (pageURL, data) {
 
     recieverWin.loadURL(pageURL)
 
-    ipcMain.on('reciever-ready', event => {
+    ipcMain.once('reciever-ready', event => {
         event.returnValue = data
     })
 
