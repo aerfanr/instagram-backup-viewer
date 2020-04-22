@@ -54,5 +54,5 @@
     "prop-types": "^15.7.2",
     "react-router-dom": "^5.1.2"
   },
-  "homepage": "http://localhost"
+  "homepage": "./"
 }
