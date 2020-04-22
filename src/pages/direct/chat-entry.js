@@ -19,7 +19,7 @@ function ChatEntry (props) {
     }
 
     return (
-        <div className='chat-entry' onClick={() => {
+        <div className='menu-option' onClick={() => {
             showChatWin(props.data)
         }}>
             {titleString}

@@ -1,6 +1,6 @@
 {
   "name": "insta-history",
-  "version": "0.1.0",
+  "version": "0.1.0-beta",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -53,5 +53,6 @@
     "fs": "0.0.1-security",
     "prop-types": "^15.7.2",
     "react-router-dom": "^5.1.2"
-  }
+  },
+  "homepage": "http://localhost"
 }

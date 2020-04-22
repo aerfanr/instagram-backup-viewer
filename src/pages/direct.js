@@ -27,9 +27,9 @@ function Direct () {
 
     return ([
         <h1 key='title'> Direct </h1>,
-        <div key='back' className='back'>
-            <Link to='/'> back </Link>
-        </div>,
+        <Link key='back' to='/'>
+            <div className='back'> ← </div>
+        </Link>,
         <div key='chats-list' className='chats-list'>
             {jsonData.map((value, index) => {
                 return (
