@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import Message from './chat-display/messege'
+import Message from './chat-display/message'
 
 const { ipcRenderer } = window.require('electron')
 
@@ -16,7 +16,7 @@ function ChatDisplay () {
     }, [])
 
     return ([
-        <h1 key='title'>direct chat</h1>,
+        <h1 key='title'>Direct chat</h1>,
         data.conversation.map((value, index) => {
             return (
                 <Message key={index} info={value}/>

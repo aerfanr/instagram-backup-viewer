@@ -7,7 +7,7 @@ function Message (props) {
             console.log(props.info)
         }}>
             <div className='message-sender'>{props.info.sender}:</div>
-            <div className='message-body'>
+            <div className='message-body' dir='auto'>
                 {props.info.text ? props.info.text + ' ' : ''}
                 {props.info.link ? <a href={props.info.link}> {props.info.link + ' '} </a> : ''}
                 {props.info.mentioned_username ? 'Mentioned ' + props.info.mentioned_username + ' ' : ''}

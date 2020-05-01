@@ -71,3 +71,19 @@ code {
     background-color: black;
     color: #eeeeee;
 }
+
+.message {
+    background-color: #d0d0d0;
+
+    padding: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.message-sender {
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+.media-display {
+    max-width: 100%;
+}
