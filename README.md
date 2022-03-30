@@ -1,3 +1,5 @@
+### This project is depricated and vulnerable. Do NOT use it.
+
 # Instagram Backup Viewer
 
 You can use this tool to view your Instagram backups
